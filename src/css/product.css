@@ -1,0 +1,46 @@
+.productImage { 
+    position: relative; 
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+ }
+ 
+ .productsSection {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ h5 { 
+    position: absolute; 
+    top: 0; 
+    left: 10px; 
+    width: 100%; 
+ }
+ 
+ h5 span { 
+    color: white; 
+    font: Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0);   
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px; 
+ }
+
+ .productCarousel {
+    width: 50%;
+    padding-left: 25%;
+ }
+
+ .priceText { 
+    position: absolute; 
+    bottom : 30px; 
+    left: 10px; 
+    
+
+    color: white; 
+    font: bold 24px/45px, Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0);   
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+ }

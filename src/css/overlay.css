@@ -1,0 +1,43 @@
+.overlay {
+    position: fixed;
+    background: rgb(0, 0, 0);   
+    background: rgba(0, 0, 0, 0.7);
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    
+    visibility: hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+    transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.overlay-content {
+    align-content: center;
+    width: 60%;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: black;
+    cursor: pointer;
+    font: 50px Helvetica;
+    opacity: .5;
+}
+.close:hover {
+    opacity: .8;
+}
